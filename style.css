@@ -1,0 +1,176 @@
+*
+{
+    margin: 0px;
+}
+
+html {
+    background-color: #6B64FA;
+}
+
+main {
+    margin: 0 auto;
+    
+
+}
+
+header {
+    text-align: center;
+    background-color: #2E2B6B;
+    background-size: cover;
+    padding: 2rem;
+    margin: 0px;
+    color: white;
+    font-size: 50px;
+    border: solid 1rem;
+    border-color: indianred;
+    animation: color 4s infinite;
+    animation-direction: alternate ;
+}
+
+h1 {
+    animation: transform 2s ease .5s;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 40px;
+    color: white;
+}
+
+p {
+    font-size: 30px;
+    margin: 2rem;
+    text-align: center;
+    color: white;
+}
+
+li {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #2E2B6B;
+    font-size: 20px;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0rem;
+    
+    
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #F2EBDF;
+    
+}
+
+img {
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%);
+    border: solid .5rem;
+    border-color: #2E2B6B;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: #2E2B6B;
+    background-size: cover;
+    padding: 2rem;
+    color: #F2EBDF;
+    font-size: large;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
+}
+
+.proj:hover {
+    background-color: #679BF6;
+    transition: background-color 1s ease-out;
+    cursor: pointer;
+}
+
+.lab:hover {
+    background-color: #679BF6;
+    transition: background-color 1s ease-out;
+    cursor: pointer;
+}
+
+
+@keyframes color {
+    0% {
+        border-color: #D42B22;
+    }
+    50% {
+        border-color: #9559EB;
+    }
+    75% {
+        border-color: #A846D4;
+        
+    }
+    100% {
+        border-color: #F051F6;
+    }
+}
+
+@keyframes transform {
+    0% {
+        opacity: 0;
+        transform: translateX(-50rem);
+    }
+    85% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    p {
+        font-size: 25px;
+    }
+
+
+    .labs {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 0rem;
+    }
+
+    li {
+        padding: 2rem;
+        margin: 1rem;
+        display: inline-block;
+        
+    }
+
+    footer {
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+    }
+
+
+
+
+
+
+}
